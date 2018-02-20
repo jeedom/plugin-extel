@@ -1,4 +1,4 @@
-<div class="eqLogic-widget eqLogic" style="width: 250px;border:#border#;border-radius:#border-radius#;background-color: #background-color#;color: #color#;#style#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="dashboard">
+<div class="eqLogic-widget eqLogic" style="width: 250px;min-height:150px;border:#border#;border-radius:#border-radius#;background-color: #background-color#;color: #color#;#style#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="dashboard">
 
   <style  type="text/css">
 		.extelTable_#uid# {
@@ -30,10 +30,10 @@
 			letter-spacing: 0.4px;
 		}
 	</style>
-  <span class="statusCmd" style="position: absolute;margin-left: 3px;width : 30px;z-index: 1030;"></span>
+  <span class="statusCmd" style="position: absolute;bottom: 3px;margin-left: 3px;width : 30px;z-index: 1030;"></span>
   <i class='fa fa-refresh pull-right cursor cmd refresh tooltips' data-cmd_id="#refresh_id#" title="Rafraîchir" style="margin-top: 3px;margin-right: 3px;"></i>
-  <i class="icon jeedom-prise allon cursor tooltips" title="Allumer tous" style="font-size: 1.5em;position : absolute;bottom: 3px;left: 3px;z-index: 500;"></i>
-  <i class="icon jeedom-prise alloff cursor tooltips" title="Eteindre tous" style="font-size: 1.5em;position : absolute;bottom: 3px;left: 25px;z-index: 500;color:grey;"></i>
+  <i class="icon jeedom-prise allon cursor tooltips" title="Allumer tous" style="font-size: 1.5em;position : absolute;top: 3px;left: 3px;z-index: 500;"></i>
+  <i class="icon jeedom-prise alloff cursor tooltips" title="Eteindre tous" style="font-size: 1.5em;position : absolute;top: 3px;left: 25px;z-index: 500;color:grey;"></i>
   <center><a href="#eqLink#" style="font-size : 1.2em;#hideEqLogicName#">#name_display#  <span style="font-size: 0.85em;position: relative;top:-2px;">#object_name#</span></a></center>
 
     <span class="cmd cmd-widget noRefresh" data-cmd_id="#on1_id#" style="display:none;"></span>
@@ -54,6 +54,12 @@
 <div class="tooltips extelTable_#uid#">
 
 	<div class="extelRows_#uid#" style="margin-top:50px">
+		<div class="extel_state_#uid#" style="font-size: 10px;">#etat1_name#</div>
+		<div class="extel_state_#uid#" style="font-size: 10px;">#etat2_name#</div>
+		<div class="extel_state_#uid#" style="font-size: 10px;">#etat3_name#</div>
+	</div>
+
+	<div class="extelRows_#uid#" style="margin-top:50px">
 		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat1 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
 		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat2 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
 		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat3 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
@@ -69,6 +75,11 @@
         <div class="#current1_history# extel_Infos_#uid#" data-cmd_id="#current1_id#"><div class="extel_Data_#uid# current1_#uid#" title="Courant 1 (#current1_collectDate#)">#current1# mA</div></div>
         <div class="#current2_history# extel_Infos_#uid#" data-cmd_id="#current2_id#"><div class="extel_Data_#uid# current2_#uid#" title="Courant 2 (#current2_collectDate#)">#current2# mA</div></div>
         <div class="#current3_history# extel_Infos_#uid#" data-cmd_id="#current3_id#"><div class="extel_Data_#uid# current3_#uid#" title="Courant 3 (#current3_collectDate#)">#current3# mA</div></div>
+	</div>
+	<div class="extelRows_#uid#" style="margin-top:50px">
+		<div class="extel_state_#uid#" style="font-size: 10px;">#etat4_name#</div>
+		<div class="extel_state_#uid#" style="font-size: 10px;">#etat5_name#</div>
+		<div class="extel_state_#uid#" style="font-size: 10px;">#etat6_name#</div>
 	</div>
     <div class="extelRows_#uid#">
 		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat4 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>

@@ -561,6 +561,7 @@ class extel extends eqLogic {
 				$replace['#' . $cmd->getLogicalId() . '#'] = $value == '' ? 0 : $value;
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
 				$replace['#' . $cmd->getLogicalId() . '_collectDate#'] = $cmd->getCollectDate();
+				$replace['#' . $cmd->getLogicalId() . '_name#'] = $cmd->getName();
 				if ($cmd->getIsHistorized() == 1) {
 					$replace['#' . $cmd->getLogicalId() . '_history#'] = 'history cursor';
 				}
