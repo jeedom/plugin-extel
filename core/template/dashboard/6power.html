@@ -32,9 +32,9 @@
 	</style>
   <span class="statusCmd" style="position: absolute;bottom: 3px;margin-left: 3px;width : 30px;z-index: 1030;"></span>
   <i class='fa fa-refresh pull-right cursor cmd refresh tooltips' data-cmd_id="#refresh_id#" title="Rafraîchir" style="margin-top: 3px;margin-right: 3px;"></i>
-  <i class="icon jeedom-prise allon cursor tooltips" title="Allumer tous" style="font-size: 1.5em;position : absolute;top: 3px;left: 3px;z-index: 500;"></i>
-  <i class="icon jeedom-prise alloff cursor tooltips" title="Eteindre tous" style="font-size: 1.5em;position : absolute;top: 3px;left: 25px;z-index: 500;color:grey;"></i>
-  <center><a href="#eqLink#" style="font-size : 1.2em;#hideEqLogicName#">#name_display#  <span style="font-size: 0.85em;position: relative;top:-2px;">#object_name#</span></a></center>
+  <i class="icon jeedom-prise allon cursor tooltips" title="Allumer tous" style="font-size: 1.2em;position : absolute;top: 3px;left: 3px;z-index: 1030;"></i>
+  <i class="fas fa-times alloff cursor tooltips" title="Eteindre tous" style="font-size: 1.2em;position : absolute;top: 3px;left: 25px;z-index: 1030;"></i>
+  <center class="widget-name"><a href="#eqLink#" style="font-size : 1.5em;#hideEqLogicName#">#name_display#</a></center>
 
     <span class="cmd cmd-widget noRefresh" data-cmd_id="#on1_id#" style="display:none;"></span>
     <span class="cmd cmd-widget noRefresh" data-cmd_id="#on2_id#" style="display:none;"></span>
@@ -60,9 +60,9 @@
 	</div>
 
 	<div class="extelRows_#uid#" style="margin-top:50px">
-		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat1 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
-		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat2 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
-		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat3 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
+		<div class="extel_state_#uid# prise1"><i class="icon jeedom-prise etat1 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>
+		<div class="extel_state_#uid# prise2"><i class="icon jeedom-prise etat2 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>
+		<div class="extel_state_#uid# prise3"><i class="icon jeedom-prise etat3 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>
 	</div>
     
     <div class="extelRows_#uid# powerinfos">
@@ -82,9 +82,9 @@
 		<div class="extel_state_#uid#" style="font-size: 10px;">#etat6_name#</div>
 	</div>
     <div class="extelRows_#uid#">
-		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat4 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
-		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat5 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
-		<div class="extel_state_#uid#"><i class="icon jeedom-prise etat6 cursor tooltips" title="" style="font-size: 3em;margin-left: 5px;color:grey"></i></div>
+		<div class="extel_state_#uid# prise4"><i class="icon jeedom-prise etat4 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>
+		<div class="extel_state_#uid# prise5"><i class="icon jeedom-prise etat5 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>
+		<div class="extel_state_#uid# prise6"><i class="icon jeedom-prise etat6 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>
 	</div>
     
     <div class="extelRows_#uid# powerinfos">
@@ -104,23 +104,23 @@
   $('.eqLogic[data-eqLogic_uid=#uid#] .refresh').on('click', function () {
     jeedom.cmd.execute({id: '#refresh_id#'});
   });
-  if ('#etat1#' == '1') {
-        $('.eqLogic[data-eqLogic_uid=#uid#] .etat1').css('color', 'white');
+  if ('#etat1#' == '0') {
+        $('.eqLogic[data-eqLogic_uid=#uid#] .prise1').empty().append('<i class="fas fa-times etat1 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>');
   }
-  if ('#etat2#' == '1') {
-        $('.eqLogic[data-eqLogic_uid=#uid#] .etat2').css('color', 'white');
+  if ('#etat2#' == '0') {
+        $('.eqLogic[data-eqLogic_uid=#uid#] .prise2').empty().append('<i class="fas fa-times etat2 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>');
   }
-  if ('#etat3#' == '1') {
-        $('.eqLogic[data-eqLogic_uid=#uid#] .etat3').css('color', 'white');
+  if ('#etat3#' == '0') {
+        $('.eqLogic[data-eqLogic_uid=#uid#] .prise3').empty().append('<i class="fas fa-times etat3 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>');
   }
-  if ('#etat4#' == '1') {
-        $('.eqLogic[data-eqLogic_uid=#uid#] .etat4').css('color', 'white');
+  if ('#etat4#' == '0') {
+        $('.eqLogic[data-eqLogic_uid=#uid#] .prise4').empty().append('<i class="fas fa-times etat4 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>');
   }
-  if ('#etat5#' == '1') {
-        $('.eqLogic[data-eqLogic_uid=#uid#] .etat5').css('color', 'white');
+  if ('#etat5#' == '0') {
+        $('.eqLogic[data-eqLogic_uid=#uid#] .prise5').empty().append('<i class="fas fa-times etat5 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>');
   }
-  if ('#etat6#' == '1') {
-        $('.eqLogic[data-eqLogic_uid=#uid#] .etat6').css('color', 'white');
+  if ('#etat6#' == '0') {
+        $('.eqLogic[data-eqLogic_uid=#uid#] .prise6').empty().append('<i class="fas fa-times etat6 cursor" style="font-size: 3em;margin-left: 5px;"></i></div>');
   }
   $('.eqLogic[data-eqLogic_uid=#uid#] .etat1').on('click', function() {
         if('#etat1#' == '1'){
