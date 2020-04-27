@@ -1,18 +1,12 @@
 {
-    "desktop\/modal\/health.php": {
+    "plugins\/extel\/desktop\/modal\/health.php": {
         "Image": "Image",
         "Module": "Module",
         "ID": "ID",
         "IP": "IP",
         "Date création": "Date création"
     },
-    "desktop\/js\/extel.js": {
-        "Santé extel": "Santé extel",
-        "Afficher": "Afficher",
-        "Historiser": "Historiser",
-        "Tester": "Tester"
-    },
-    "desktop\/php\/extel.php": {
+    "plugins\/extel\/desktop\/php\/extel.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Gestion": "Gestion",
         "Ajouter": "Ajouter",
@@ -34,7 +28,13 @@
         "Options": "Options",
         "Action": "Action"
     },
-    "core\/class\/extel.class.php": {
+    "plugins\/extel\/desktop\/js\/extel.js": {
+        "Santé extel": "Santé extel",
+        "Afficher": "Afficher",
+        "Historiser": "Historiser",
+        "Tester": "Tester"
+    },
+    "plugins\/extel\/core\/class\/extel.class.php": {
         "Etat1": "Etat1",
         "On1": "On1",
         "Off1": "Off1",
