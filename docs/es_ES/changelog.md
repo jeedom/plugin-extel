@@ -1,3 +1,7 @@
-20/09/2019
+>**Importante**
+>
+>Como recordatorio si no hay información sobre la actualización, significa que solo se refiere a la actualización de documentación, traducción o texto
 
-Adaptación V4
+# 20/09/2019
+
+- Adaptación V4

@@ -1,3 +1,7 @@
-09-20-2019
+>**Important**
+>
+>As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text
 
-V4 adaptation
+# 09-20-2019
+
+- V4 adaptation
