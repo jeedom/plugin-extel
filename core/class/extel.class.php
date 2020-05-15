@@ -601,4 +601,4 @@ class extelCmd extends cmd {
 
 	/*     * **********************Getteur Setteur*************************** */
 }
-?>
+
