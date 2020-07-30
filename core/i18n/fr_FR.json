@@ -68,5 +68,8 @@
         "OnTous": "OnTous",
         "OffTous": "OffTous",
         "Rafraichir": "Rafraichir"
+    },
+    "info.json": {
+        "Plugin pour controller la multiprise Extel": "Plugin pour controller la multiprise Extel"
     }
 }

@@ -68,5 +68,8 @@
         "OnTous": "",
         "OffTous": "",
         "Rafraichir": "クール"
+    },
+    "info.json": {
+        "Plugin pour controller la multiprise Extel": ""
     }
 }

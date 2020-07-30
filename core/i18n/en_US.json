@@ -68,5 +68,8 @@
         "OnTous": "All",
         "OffTous": "Off All",
         "Rafraichir": "Refresh"
+    },
+    "info.json": {
+        "Plugin pour controller la multiprise Extel": "Plugin to control the Extel power strip"
     }
 }

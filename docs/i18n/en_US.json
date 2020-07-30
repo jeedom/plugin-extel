@@ -7,10 +7,10 @@
         " IMPORTANT.": " Important.",
         " IMPORTANT?": " Important?",
         "IMPORTANT ": "Important ",
-        "[IMPORTANT": "[Important",
-        "IMPORTANT]": "Important]",
-        "*IMPORTANT": "*Important",
-        "IMPORTANT*": "Important*"
+        " IMPORTANT]": " Important]",
+        "[IMPORTANT]": "[Important]",
+        "*IMPORTANT*": "*Important*",
+        " IMPORTANT*": " Important*"
     },
     "index.md": {
         "Plugin Extel": "Extel plugin"

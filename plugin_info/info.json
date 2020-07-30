@@ -1,13 +1,33 @@
 {
     "id": "extel",
     "name": "Extel",
-    "description": "Plugin pour controller la multiprise Extel",
+    "description": {
+        "fr_FR": "Plugin pour controller la multiprise Extel",
+        "en_US": "Plugin to control the Extel power strip",
+        "es_ES": "Plugin para controlar la regleta Extel",
+        "de_DE": "Plugin zur Steuerung der Extel-Steckdosenleiste",
+        "pt_PT": "Plug-in para controlar o filtro de linha Extel"
+    },
     "licence": "AGPL",
     "author": "Ludovic SARAKHA",
     "require": "3.0",
     "category": "energy",
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/energy\/extel\/changelog",
     "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/energy\/extel\/",
-    "language" : ["fr_FR","en_US","de_DE","sp_SP"],
-"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4"]
+    "language": [
+        "fr_FR",
+        "en_US",
+        "es_ES",
+        "de_DE",
+        "pt_PT"
+    ],
+    "compatibility": [
+        "miniplus",
+        "smart",
+        "rpi",
+        "docker",
+        "diy",
+        "mobile",
+        "v4"
+    ]
 }

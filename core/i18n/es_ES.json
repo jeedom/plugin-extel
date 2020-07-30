@@ -68,5 +68,8 @@
         "OnTous": "Todos",
         "OffTous": "Off All",
         "Rafraichir": "Refrescar"
+    },
+    "info.json": {
+        "Plugin pour controller la multiprise Extel": "Plugin para controlar la regleta Extel"
     }
 }

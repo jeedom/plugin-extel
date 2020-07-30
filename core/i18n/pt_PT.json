@@ -36,7 +36,7 @@
     },
     "plugins\/extel\/core\/class\/extel.class.php": {
         "Etat1": "Estado1",
-        "On1": "On1",
+        "On1": "Em 1",
         "Off1": "Desligado1",
         "Etat2": "Estado2",
         "On2": "On2",
@@ -68,5 +68,8 @@
         "OnTous": "Todos",
         "OffTous": "Off All",
         "Rafraichir": "Legal"
+    },
+    "info.json": {
+        "Plugin pour controller la multiprise Extel": "Plug-in para controlar o filtro de linha Extel"
     }
 }

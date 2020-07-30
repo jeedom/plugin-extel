@@ -36,13 +36,13 @@
     },
     "plugins\/extel\/core\/class\/extel.class.php": {
         "Etat1": "Zustand1",
-        "On1": "On1",
+        "On1": "Auf 1",
         "Off1": "Aus1",
         "Etat2": "Zustand2",
         "On2": "On2",
         "Off2": "Aus2",
         "Etat3": "Zustand3",
-        "On3": "On3",
+        "On3": "Auf 3",
         "Off3": "Aus3",
         "Etat4": "State4",
         "On4": "On4",
@@ -68,5 +68,8 @@
         "OnTous": "Alle",
         "OffTous": "Aus allen",
         "Rafraichir": "Aktualisieren"
+    },
+    "info.json": {
+        "Plugin pour controller la multiprise Extel": "Plugin zur Steuerung der Extel-Steckdosenleiste"
     }
 }
